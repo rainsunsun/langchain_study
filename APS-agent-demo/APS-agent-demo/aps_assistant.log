@@ -1,0 +1,31 @@
+2025-03-09 14:15:05,725 - INFO - 程序启动
+2025-03-09 14:15:05,754 - INFO - 用户输入:调用test
+2025-03-09 14:15:05,755 - INFO - 收到的用户数据：调用test
+2025-03-09 14:15:05,758 - INFO - 模型正在生成回答...
+2025-03-09 14:15:07,624 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 14:15:10,045 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 14:15:10,060 - INFO - 模型回答：
+2025-03-09 14:15:10,063 - INFO - 这里是同步节点开始
+2025-03-09 14:15:20,071 - INFO - 同步节点结束
+2025-03-09 14:15:20,075 - INFO - [{'name': 'test', 'args': {'year': 2025, 'month': 2}, 'id': 'call_2d7ec1c971b54c7496ad51', 'type': 'tool_call'}]
+2025-03-09 14:15:20,088 - INFO - 这里是test工具调用
+2025-03-09 14:16:47,458 - INFO - 程序启动
+2025-03-09 14:16:47,468 - INFO - 用户输入:你好
+2025-03-09 14:16:47,469 - INFO - 收到的用户数据：你好
+2025-03-09 14:16:47,472 - INFO - 模型正在生成回答...
+2025-03-09 14:16:48,743 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 14:16:53,038 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 14:16:53,052 - INFO - 模型回答：你好！有什么我可以帮助你的吗？如果你有关于汽车排产计划（APS）的问题，或者需要特定车型的数据分析，请告诉我。
+2025-03-09 14:16:53,054 - INFO - 这里是同步节点开始
+2025-03-09 14:17:03,060 - INFO - 同步节点结束
+2025-03-09 14:17:59,011 - INFO - 程序启动
+2025-03-09 14:17:59,025 - INFO - 用户输入:你好
+2025-03-09 14:17:59,026 - INFO - 收到的用户数据：你好
+2025-03-09 14:17:59,030 - INFO - 模型正在生成回答...
+2025-03-09 14:18:00,392 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 14:18:03,976 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-09 14:18:03,991 - INFO - 模型回答：你好！有什么我可以帮助你的吗？如果你有关于汽车排产计划（APS）的问题，或者需要特定车型的数据分析，请告诉我。
+2025-03-09 14:18:03,993 - INFO - 这里是同步节点开始
+2025-03-09 14:18:13,998 - INFO - 同步节点结束
+2025-03-09 14:18:14,007 - INFO - 最终回答：====================================你好！有什么我可以帮助你的吗？如果你有关于汽车排产计划（APS）的问题，或者需要特定车型的数据分析，请告诉我。
+2025-03-09 14:18:14,007 - INFO - 回答问题所用时间14.98

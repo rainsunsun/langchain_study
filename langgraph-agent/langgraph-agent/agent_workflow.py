@@ -16,7 +16,10 @@ prompt = hub.pull("wfh/react-agent-executor")
 prompt.pretty_print()
 
 # 选择驱动代理的LLM，使用OpenAI的ChatGPT-4o模型
-llm = ChatOpenAI(model="gpt-4o")
+llm = ChatOpenAI( model="deepseek-chat",
+        base_url="https://api.deepseek.com/v1",
+        api_key="sk-d61fcc515cc54ad1af8210b74eccfbd6",
+        temperature=0.1,)
 # 创建一个REACT代理执行器，使用指定的LLM和工具，并应用从Hub中获取的prompt
 agent_executor = create_react_agent(llm, tools, messages_modifier=prompt)
 
@@ -61,7 +64,10 @@ planner_prompt = ChatPromptTemplate.from_messages(
 )
 # 使用指定的提示模板创建一个计划生成器，使用OpenAI的ChatGPT-4o模型
 planner = planner_prompt | ChatOpenAI(
-    model="gpt-4o", temperature=0
+    model="qwen-max",
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key="sk-0ac182056fcd4a3eb1a883e453e0976d",
+    temperature=0.01,
 ).with_structured_output(Plan)
 
 # 调用计划生成器，询问“当前澳大利亚公开赛冠军的家乡是哪里？”
@@ -105,7 +111,10 @@ replanner_prompt = ChatPromptTemplate.from_template(
 
 # 使用指定的提示模板创建一个重新计划生成器，使用OpenAI的ChatGPT-4o模型
 replanner = replanner_prompt | ChatOpenAI(
-    model="gpt-4o", temperature=0
+    model="qwen-max",
+    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+    api_key="sk-0ac182056fcd4a3eb1a883e453e0976d",
+    temperature=0.01,
 ).with_structured_output(Act)
 
 from typing import Literal
