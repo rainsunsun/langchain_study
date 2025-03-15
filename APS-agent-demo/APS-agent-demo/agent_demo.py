@@ -175,19 +175,6 @@ workflow.add_conditional_edges("simple_node", should_continue,{"end": END,"tools
 # 初始化内存,以在图运行之间持久化状态
 checkpointer = MemorySaver()
 
-# 编译图
-app = workflow.compile(checkpointer=checkpointer)
-
-try:
-    img_data = app.get_graph().draw_mermaid_png()
-    with open("graph_image.png", "wb") as img_file:
-        img_file.write(img_data)
-except Exception as e:
-    print(f"Error occurred: {e}")
-    
-
-
-
 
 # 编译图
 app = workflow.compile(checkpointer=checkpointer)

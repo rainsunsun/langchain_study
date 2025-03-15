@@ -1,0 +1,52 @@
+2025-03-13 14:18:33,544 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-13 14:18:38,338 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-13 14:20:28,875 - INFO - 程序启动
+2025-03-13 14:20:35,037 - INFO - 用户输入:你是谁
+2025-03-13 14:20:35,039 - INFO - 收到的用户数据：你是谁
+2025-03-13 14:20:35,045 - INFO - 模型正在生成回答...
+2025-03-13 14:20:36,453 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-13 14:20:44,359 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-13 14:20:44,369 - INFO - 模型回答：我是专业的汽车APS助手，我的主要职责是使用数据库工具来获取和分析汽车排产数据。我可以基于这些数据为您提供精确且专业的报告，帮助您更好地了解不同车型的生产情况、销售表现等信息。如果您有任何关于汽车排产或销售的问题，请随时向我提问。
+2025-03-13 14:20:44,370 - INFO - 这里是同步节点开始
+2025-03-13 14:20:54,384 - INFO - 同步节点结束
+2025-03-13 14:20:54,386 - INFO - 最终回答：===================我是专业的汽车APS助手，我的主要职责是使用数据库工具来获取和分析汽车排产数据。我可以基于这些数据为您提供精确且专业的报告，帮助您更好地了解不同车型的生产情况、销售表现等信息。如果您有任何关于汽车排产或销售的问题，请随时向我提问。
+2025-03-13 14:20:54,386 - INFO - 回答问题所用时间19.34
+2025-03-13 14:21:05,908 - INFO - 用户输入:都有哪些车型
+2025-03-13 14:21:05,910 - INFO - 收到的用户数据：都有哪些车型
+2025-03-13 14:21:05,914 - INFO - 模型正在生成回答...
+2025-03-13 14:21:07,318 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-13 14:21:09,071 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-13 14:21:09,075 - INFO - 模型回答：
+2025-03-13 14:21:09,076 - INFO - 这里是同步节点开始
+2025-03-13 14:21:19,085 - INFO - 同步节点结束
+2025-03-13 14:21:19,086 - INFO - [{'name': 'call_all_saling_models_within_series', 'args': {}, 'id': 'call_36cd47cd50d64842a14baf', 'type': 'tool_call'}]
+2025-03-13 14:21:19,424 - INFO - 最终回答：==================={"res": "{'Cybertruck': {'三电机版': [{'battery': '123kWh', 'endurance': '515km', 'saleModel': '三电机版', 'modelCode': 'Cyber', '月总生产(辆)': 400}], '双电机版': [{'battery': '123kWh', 'endurance': '547km', 'saleModel': '双电机版', 'modelCode': 'Cyber', '月总生产(辆)': 500}], '扩展续航版': [{'battery': '170kWh', 'endurance': '756km', 'saleModel': '扩展续航版', 'modelCode': 'Cyber', '月总生产(辆)': 370}]}, 'Model 3': {'3-性能版': [{'battery': '62.5kWh', 'endurance': '614km', 'saleModel': '3-性能版', 'modelCode': 'M3', '月总生产(辆)': 1800}], '3-标准续航版': [{'battery': '55kWh', 'endurance': '550km', 'saleModel': '3-标准续航版', 'modelCode': 'M3', '月总生产(辆)': 1440}], '3-长续航版': [{'battery': '62.5kWh', 'endurance': '713km', 'saleModel': '3-长续航版', 'modelCode': 'M3', '月总生产(辆)': 7450}]}, 'Model S': {'S-长续航版': [{'battery': '100kWh', 'endurance': '652km', 'saleModel': 'S-长续航版', 'modelCode': 'MS', '月总生产(辆)': 1460}], 'S-Plaid版': [{'battery': '100kWh', 'endurance': '520km', 'saleModel': 'S-Plaid版', 'modelCode': 'MS', '月总生产(辆)': 4730}]}, 'Model X': {'X-Plaid版': [{'battery': '100kWh', 'endurance': '664km', 'saleModel': 'X-Plaid版', 'modelCode': 'MX', '月总生产(辆)': 300}], 'X-长续航版': [{'battery': '100kWh', 'endurance': '700km', 'saleModel': 'X-长续航版', 'modelCode': 'MX', '月总生产(辆)': 100}]}, 'Model Y': {'Y-性能版': [{'battery': '62.5kWh', 'endurance': '614km', 'saleModel': 'Y-性能版', 'modelCode': 'MY', '月总生产(辆)': 2400}], 'Y-标准续航版': [{'battery': '55kWh', 'endurance': '468km', 'saleModel': 'Y-标准续航版', 'modelCode': 'MY', '月总生产(辆)': 3100}], 'Y-长续航版': [{'battery': '62.5kWh', 'endurance': '640km', 'saleModel': 'Y-长续航版', 'modelCode': 'MY', '月总生产(辆)': 9140}]}, 'Roadster': {'基础版': [{'battery': '200kWh', 'endurance': '1300km', 'saleModel': '基础版', 'modelCode': 'Roadster', '月总生产(辆)': 150}], '创始人版': [{'battery': '200kWh', 'endurance': '1000km', 'saleModel': '创始人版', 'modelCode': 'Roadster', '月总生产(辆)': 70}]}}"}
+2025-03-13 14:21:19,424 - INFO - 回答问题所用时间13.51
+2025-03-13 14:35:29,182 - INFO - 用户输入:& D:/anaconda/envs/testEnv/python.exe c:/Users/86183/Desktop/学习日志/大模型/Langchain/langchain_study/bbzl.py
+2025-03-13 14:35:29,196 - INFO - 收到的用户数据：& D:/anaconda/envs/testEnv/python.exe c:/Users/86183/Desktop/学习日志/大模型/Langchain/langchain_study/bbzl.py
+2025-03-13 14:35:29,200 - INFO - 模型正在生成回答...
+2025-03-13 14:35:30,866 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-13 15:09:29,944 - INFO - 程序启动
+2025-03-14 15:08:09,069 - INFO - 程序启动
+2025-03-14 15:08:25,439 - INFO - 用户输入:你是谁
+2025-03-14 15:08:25,440 - INFO - 收到的用户数据：你是谁
+2025-03-14 15:08:25,447 - INFO - 模型正在生成回答...
+2025-03-14 15:08:26,512 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:08:33,203 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:08:33,214 - INFO - 模型回答：我是您的专业汽车APS助手，专门使用数据库工具来提供精确且专业的数据分析。我可以帮助您获取和分析关于汽车排产计划（APS）的各种信息。无论您需要了解特定车型的排产量、总的生产数量统计，还是更详细的系列车型分类下的在售车型列表等，我都可以通过调用相应的工具来为您提供所需的数据，并基于这些数据生成专业的报告以回答您的问题。请问有什么我可以帮到您的吗？
+2025-03-14 15:08:33,215 - INFO - 这里是同步节点开始
+2025-03-14 15:08:43,221 - INFO - 同步节点结束
+2025-03-14 15:08:43,223 - INFO - 最终回答：===================我是您的专业汽车APS助手，专门使用数据库工具来提供精确且专业的数据分析。我可以帮助您获取和分析关于汽车排产计划（APS）的各种信息。无论您需要了解特定车型的排产量、总的生产数量统计，还是更详细的系列车型分类下的在售车型列表等，我都可以通过调用相应的工具来为您提供所需的数据，并基于这些数据生成专业的报告以回答您的问题。请问有什么我可以帮到您的吗？
+2025-03-14 15:08:43,223 - INFO - 回答问题所用时间17.78
+2025-03-14 15:08:53,935 - INFO - 用户输入:我刚刚问了什么问题
+2025-03-14 15:08:53,937 - INFO - 收到的用户数据：我刚刚问了什么问题
+2025-03-14 15:08:53,940 - INFO - 模型正在生成回答...
+2025-03-14 15:08:54,386 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:09:07,593 - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-03-14 15:09:07,595 - INFO - 模型回答：您刚刚询问了“你是谁”。为了回答您的问题，我介绍了自己作为专业的汽车APS助手的角色，并说明了我的功能和如何通过调用特定工具来帮助您获取关于汽车排产计划的详细信息。不过，根据您的指示，每次回答问题时我都需要调用工具以确保准确性。因此，让我调用`call_all_saling_models_within_series`函数来展示一个示例报告，这将帮助您了解我能提供的服务类型。请注意，这个调用主要是为了演示目的，因为您的原始问题是关于我的身份而非具体的数据请求。
+2025-03-14 15:09:07,596 - INFO - 这里是同步节点开始
+2025-03-14 15:09:17,605 - INFO - 同步节点结束
+2025-03-14 15:09:17,607 - INFO - [{'name': 'call_all_saling_models_within_series', 'args': {'year': 2025, 'month': 2}, 'id': 'call_af9c97ea92e0470c80586c', 'type': 'tool_call'}]
+2025-03-14 15:09:17,974 - INFO - 最终回答：==================={"res": "{'Cybertruck': {'三电机版': [{'battery': '123kWh', 'endurance': '515km', 'saleModel': '三电机版', 'modelCode': 'Cyber', '月总生产(辆)': 400}], '双电机版': [{'battery': '123kWh', 'endurance': '547km', 'saleModel': '双电机版', 'modelCode': 'Cyber', '月总生产(辆)': 500}], '扩展续航版': [{'battery': '170kWh', 'endurance': '756km', 'saleModel': '扩展续航版', 'modelCode': 'Cyber', '月总生产(辆)': 370}]}, 'Model 3': {'3-性能版': [{'battery': '62.5kWh', 'endurance': '614km', 'saleModel': '3-性能版', 'modelCode': 'M3', '月总生产(辆)': 1800}], '3-标准续航版': [{'battery': '55kWh', 'endurance': '550km', 'saleModel': '3-标准续航版', 'modelCode': 'M3', '月总生产(辆)': 1440}], '3-长续航版': [{'battery': '62.5kWh', 'endurance': '713km', 'saleModel': '3-长续航版', 'modelCode': 'M3', '月总生产(辆)': 7450}]}, 'Model S': {'S-长续航版': [{'battery': '100kWh', 'endurance': '652km', 'saleModel': 'S-长续航版', 'modelCode': 'MS', '月总生产(辆)': 1460}], 'S-Plaid版': [{'battery': '100kWh', 'endurance': '520km', 'saleModel': 'S-Plaid版', 'modelCode': 'MS', '月总生产(辆)': 4730}]}, 'Model X': {'X-Plaid版': [{'battery': '100kWh', 'endurance': '664km', 'saleModel': 'X-Plaid版', 'modelCode': 'MX', '月总生产(辆)': 300}], 'X-长续航版': [{'battery': '100kWh', 'endurance': '700km', 'saleModel': 'X-长续航版', 'modelCode': 'MX', '月总生产(辆)': 100}]}, 'Model Y': {'Y-性能版': [{'battery': '62.5kWh', 'endurance': '614km', 'saleModel': 'Y-性能版', 'modelCode': 'MY', '月总生产(辆)': 2400}], 'Y-标准续航版': [{'battery': '55kWh', 'endurance': '468km', 'saleModel': 'Y-标准续航版', 'modelCode': 'MY', '月总生产(辆)': 3100}], 'Y-长续航版': [{'battery': '62.5kWh', 'endurance': '640km', 'saleModel': 'Y-长续航版', 'modelCode': 'MY', '月总生产(辆)': 9140}]}, 'Roadster': {'基础版': [{'battery': '200kWh', 'endurance': '1300km', 'saleModel': '基础版', 'modelCode': 'Roadster', '月总生产(辆)': 150}], '创始人版': [{'battery': '200kWh', 'endurance': '1000km', 'saleModel': '创始人版', 'modelCode': 'Roadster', '月总生产(辆)': 70}]}}"}
+2025-03-14 15:09:17,974 - INFO - 回答问题所用时间24.04
+2025-03-14 20:31:27,616 - INFO - 程序启动

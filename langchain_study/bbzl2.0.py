@@ -163,37 +163,60 @@ config = {"configurable": {"thread_id": "1"}}
 agent = create_react_agent(llm, tools, prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
+# 执行图
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage
+def answer(question: str) -> str:
+    """
+    question: str - 用户的问题
+    """
+    
+    final_state = app.invoke(
+            {
+                "messages": [
+                    SystemMessage(
+                        content="""
+                        你是一个搜索日期的智能机器人xsun。必须使用提供的工具来回答问题,
+                        为保证准确性,你每次回答问题的时候都需要调用工具,
+                        并且在回答的时候告诉我你调用了什么工具,
+                        你需要尽一切可能精确,不允许省略内容,并为用户生成专业的报告以回答用户的问题
+                        """
+                    ),
+                    HumanMessage(content=question),
+                ]
+            },
+            # thread_id 相同代表在同一个会话中
+            config={"configurable": {"thread_id": 42}},
+        )
+        # print(final_state)
+    result = "===================" + final_state["messages"][-1].content
+    print(result)
+        
 
-
-#------------------answer_system---------------------
-#要满足1.可以存储记忆，2.可以调用工具3.自我认知正确
-
-
-#------------------循环函数-------------------------
+    
+from rich.prompt import Prompt
 
 def main():
+    """
+    主函数
+    """
+    
     while True:
-        # 获取用户输入
-        user_input = input("请输入你的问题（输入 quit/exit/q 退出）：")
-        
-        # 检查退出指令
+
+        question = Prompt.ask("[bold green]请输入问题[/bold green]")
+        user_input = question.strip()
         if user_input.lower() in ["quit", "exit", "q"]:
             print("Goodbye!")
             break
-        
-        # 处理其他输入
         else:
-            events = app.stream(
-                {"messages": [{"role": "user", "content": user_input}]},
-                config,
-                stream_mode="values",
-                )
-            for event in events:
-                event["messages"][-1].pretty_print()
-            
-        
-            
+            #question = "你好"
+            answer(question)
+
 if __name__ == "__main__":
     main()
+# end
+
+
+
             
             
