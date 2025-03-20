@@ -152,8 +152,8 @@ prompt = ChatPromptTemplate.from_messages([
 # ---------------- 图绘制 ----------------
 # 开始画图
 graph_png = app.get_graph().draw_mermaid_png()
-with open("langgraph_bbzl.png", "wb") as f:
-    f.write(graph_png)
+#with open("langgraph_bbzl2.0.png", "wb") as f:
+   # f.write(graph_png)
 
 
 # ---------------- Agent 创建和调用 ----------------
@@ -163,6 +163,10 @@ config = {"configurable": {"thread_id": "1"}}
 agent = create_react_agent(llm, tools, prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
+
+graph_png = agent.get_graph().draw_mermaid_png()
+with open("langgraph_bbzl2.0.png", "wb") as f:
+    f.write(graph_png)
 # 执行图
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.messages import HumanMessage, SystemMessage
